@@ -306,6 +306,9 @@
                                 <state key="normal" title="Choose Avatar">
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickAvatarPressed:" destination="RvJ-5q-KDh" eventType="touchUpInside" id="FZL-Vz-cEF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvA-4w-bbl">
                                 <rect key="frame" x="90" y="471" width="195" height="26"/>
@@ -318,6 +321,9 @@
                                 <state key="normal" title="Generate Background color">
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickBgColorPressed:" destination="RvJ-5q-KDh" eventType="touchUpInside" id="L4n-yk-rI7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1n-OY-hN8">
                                 <rect key="frame" x="62.5" y="537" width="250" height="50"/>
@@ -330,6 +336,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="0.9881327741" green="1" blue="0.97595790110000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="RvJ-5q-KDh" eventType="touchUpInside" id="gaR-Vc-dpJ"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Gh5-Nt-Ond">
                                 <rect key="frame" x="62.5" y="133" width="250" height="131"/>
@@ -393,6 +402,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iv7-YU-t0p"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTxt" destination="gcb-HW-k6w" id="H9j-Vv-qge"/>
+                        <outlet property="passwordTxt" destination="88b-Wx-q9E" id="kdv-wr-oM9"/>
+                        <outlet property="userImg" destination="9p3-b2-AD0" id="5GN-3z-PFK"/>
+                        <outlet property="usernameTxt" destination="EqY-BU-lgA" id="dul-ol-pMW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UPo-Cg-H6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="bIW-E8-XYO" userLabel="Exit" sceneMemberID="exit"/>
