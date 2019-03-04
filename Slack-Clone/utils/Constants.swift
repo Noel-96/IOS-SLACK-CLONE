@@ -7,12 +7,7 @@
 //
 
 import Foundation
- 
- 
- 
- 
- 
- 
+
  
  //COMPLETION HANDLER 
  typealias CompletionHandler = (_ Success: Bool) -> ()
@@ -25,10 +20,16 @@ import Foundation
  let TO_AVATAR_PICKER = "toAvatarPicker"
  
  //User Defaults
- let TOKEN_KEY = "token"
- let LOGGED_IN_KEY =  "loggedin"
- let USER_EMAIL = "userEmail"
+ let TOKEN_KEY     = "token"
+ let LOGGED_IN_KEY = "loggedin"
+ let USER_EMAIL    = "userEmail"
  
+ // Colors
+ let smackPurplePlaceholder = #colorLiteral(red: 0.3254901961, green: 0.4215201139, blue: 0.7752227187, alpha: 0.5)
+ 
+ // Notification Constants
+ let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
+
  
  //Base_Url_constant
  
