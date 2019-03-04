@@ -9,13 +9,15 @@
 import Foundation
  
  
+ 
+ 
+ 
+ 
+ 
+ //COMPLETION HANDLER 
  typealias CompletionHandler = (_ Success: Bool) -> ()
- 
- 
- 
- 
+
 //segues
- 
  let TO_LOGIN = "toLogin"
  let TO_CREATE_ACCOUNT = "toCreateAccount"
  let UNWIND = "unwindtochannel"
@@ -31,6 +33,7 @@ import Foundation
  let  BASE_URL =  "https://slack--clone.herokuapp.com/v1/"
  let  URL_REGISTER = "\(BASE_URL)account/register "
  let URL_LOGIN = "\(BASE_URL)account/login"
+ let URL_USER_ADD = "\(BASE_URL)user/add"
  
  
  // Headers
