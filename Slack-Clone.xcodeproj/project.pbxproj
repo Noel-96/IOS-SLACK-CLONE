@@ -15,6 +15,8 @@
 		4EAC7A1E21F49EAE00966746 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EAC7A1C21F49EAE00966746 /* LaunchScreen.storyboard */; };
 		4EAC7A2921F49EAF00966746 /* Slack_CloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC7A2821F49EAF00966746 /* Slack_CloneTests.swift */; };
 		4EAC7A3421F49EAF00966746 /* Slack_CloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC7A3321F49EAF00966746 /* Slack_CloneUITests.swift */; };
+		4EB14FC7222D95E300742C1F /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB14FC6222D95E300742C1F /* AvatarPickerVC.swift */; };
+		4EB14FC9222D995C00742C1F /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB14FC8222D995C00742C1F /* AvatarCell.swift */; };
 		4EC77AC322293DC7001B1DAF /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC77AC222293DC7001B1DAF /* UserDataService.swift */; };
 		4ECE0793221EE60E0006B380 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECE0792221EE60E0006B380 /* Constants.swift */; };
 		4ECE0795221EF1120006B380 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECE0794221EF1120006B380 /* LoginVC.swift */; };
@@ -62,6 +64,8 @@
 		4EAC7A2F21F49EAF00966746 /* Slack-CloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slack-CloneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EAC7A3321F49EAF00966746 /* Slack_CloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slack_CloneUITests.swift; sourceTree = "<group>"; };
 		4EAC7A3521F49EAF00966746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EB14FC6222D95E300742C1F /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		4EB14FC8222D995C00742C1F /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		4EC77AC222293DC7001B1DAF /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		4ECE0792221EE60E0006B380 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4ECE0794221EF1120006B380 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 				4EE5A63F221EA04C006F6F4A /* ChannelVC.swift */,
 				4ECE0794221EF1120006B380 /* LoginVC.swift */,
 				4ECE0798221EF3620006B380 /* CreateAccountVC.swift */,
+				4EB14FC6222D95E300742C1F /* AvatarPickerVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			children = (
 				4EE5A645221EB53B006F6F4A /* GradientView.swift */,
 				4ECE0796221EF21A0006B380 /* CustomSignInTextField.swift */,
+				4EB14FC8222D995C00742C1F /* AvatarCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -408,6 +414,7 @@
 			files = (
 				4EE5A63E221EA035006F6F4A /* ChatVC.swift in Sources */,
 				4EAC7A1921F49EAE00966746 /* Slack_Clone.xcdatamodeld in Sources */,
+				4EB14FC9222D995C00742C1F /* AvatarCell.swift in Sources */,
 				4ECE0797221EF21A0006B380 /* CustomSignInTextField.swift in Sources */,
 				4ECE0795221EF1120006B380 /* LoginVC.swift in Sources */,
 				4EE5A646221EB53B006F6F4A /* GradientView.swift in Sources */,
@@ -418,6 +425,7 @@
 				4E93D17921F4FAFB00F9F49D /* SWRevealViewController.m in Sources */,
 				4ECE0799221EF3620006B380 /* CreateAccountVC.swift in Sources */,
 				4EE5A640221EA04C006F6F4A /* ChannelVC.swift in Sources */,
+				4EB14FC7222D95E300742C1F /* AvatarPickerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
