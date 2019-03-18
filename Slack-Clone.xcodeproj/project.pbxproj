@@ -27,6 +27,8 @@
 		4EE5A63E221EA035006F6F4A /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5A63D221EA035006F6F4A /* ChatVC.swift */; };
 		4EE5A640221EA04C006F6F4A /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5A63F221EA04C006F6F4A /* ChannelVC.swift */; };
 		4EE5A646221EB53B006F6F4A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE5A645221EB53B006F6F4A /* GradientView.swift */; };
+		4EF5B64D223FC954001FA5B9 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF5B64B223FC954001FA5B9 /* ProfileVC.swift */; };
+		4EF5B64E223FC954001FA5B9 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EF5B64C223FC954001FA5B9 /* ProfileVC.xib */; };
 		AA8158C2A9E0C611770711C7 /* Pods_Slack_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A609C069132FEEF46DCB6B /* Pods_Slack_Clone.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,8 @@
 		4EE5A63D221EA035006F6F4A /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		4EE5A63F221EA04C006F6F4A /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		4EE5A645221EB53B006F6F4A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		4EF5B64B223FC954001FA5B9 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		4EF5B64C223FC954001FA5B9 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		72A42483F140E599C94B9FC1 /* Pods-Slack-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slack-Clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Slack-Clone/Pods-Slack-Clone.release.xcconfig"; sourceTree = "<group>"; };
 		F3A609C069132FEEF46DCB6B /* Pods_Slack_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Slack_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,6 +155,7 @@
 		4EAC7A0F21F49EAE00966746 /* Slack-Clone */ = {
 			isa = PBXGroup;
 			children = (
+				4EF5B64F223FC98E001FA5B9 /* xibs */,
 				4EDAB68F222035B00037F8A4 /* services */,
 				4ECE0791221EE5ED0006B380 /* utils */,
 				4EE5A63A221E9FE3006F6F4A /* model */,
@@ -210,6 +215,7 @@
 				4ECE0794221EF1120006B380 /* LoginVC.swift */,
 				4ECE0798221EF3620006B380 /* CreateAccountVC.swift */,
 				4EB14FC6222D95E300742C1F /* AvatarPickerVC.swift */,
+				4EF5B64B223FC954001FA5B9 /* ProfileVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -230,6 +236,14 @@
 			children = (
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		4EF5B64F223FC98E001FA5B9 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				4EF5B64C223FC954001FA5B9 /* ProfileVC.xib */,
+			);
+			path = xibs;
 			sourceTree = "<group>";
 		};
 		6E07401204D01A8BFEF3560D /* Frameworks */ = {
@@ -347,6 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF5B64E223FC954001FA5B9 /* ProfileVC.xib in Resources */,
 				4EAC7A1E21F49EAE00966746 /* LaunchScreen.storyboard in Resources */,
 				4EAC7A1B21F49EAE00966746 /* Assets.xcassets in Resources */,
 				4EAC7A1621F49EAE00966746 /* Main.storyboard in Resources */,
@@ -419,6 +434,7 @@
 				4EAC7A1921F49EAE00966746 /* Slack_Clone.xcdatamodeld in Sources */,
 				4EB14FC9222D995C00742C1F /* AvatarCell.swift in Sources */,
 				4ECE0797221EF21A0006B380 /* CustomSignInTextField.swift in Sources */,
+				4EF5B64D223FC954001FA5B9 /* ProfileVC.swift in Sources */,
 				4ECE0795221EF1120006B380 /* LoginVC.swift in Sources */,
 				4EE5A646221EB53B006F6F4A /* GradientView.swift in Sources */,
 				4EDAB691222035F80037F8A4 /* AuthService.swift in Sources */,
