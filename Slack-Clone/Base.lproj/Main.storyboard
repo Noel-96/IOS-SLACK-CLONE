@@ -69,6 +69,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.9881327741" green="1" blue="0.97595790110000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="j9y-Kc-mes" eventType="touchUpInside" id="585-to-Amn"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="45i-6F-Ua8">
                                 <rect key="frame" x="62.5" y="165" width="250" height="74"/>
@@ -90,6 +93,10 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="nMV-ZN-1Rh">
+                                <rect key="frame" x="169" y="240" width="37" height="37"/>
+                                <color key="color" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -97,16 +104,21 @@
                             <constraint firstItem="Dhe-0S-4p4" firstAttribute="top" secondItem="GIU-YO-dvi" secondAttribute="top" constant="60" id="9Qx-pj-4zk"/>
                             <constraint firstItem="Gq0-we-wsc" firstAttribute="centerX" secondItem="lEp-VY-1YF" secondAttribute="centerX" id="Apu-JL-fC5"/>
                             <constraint firstItem="45i-6F-Ua8" firstAttribute="top" secondItem="Dhe-0S-4p4" secondAttribute="bottom" constant="40" id="Gf8-YG-tHG"/>
+                            <constraint firstItem="nMV-ZN-1Rh" firstAttribute="centerY" secondItem="lEp-VY-1YF" secondAttribute="centerY" constant="-75" id="JzR-tr-iYj"/>
                             <constraint firstItem="Gq0-we-wsc" firstAttribute="top" secondItem="45i-6F-Ua8" secondAttribute="bottom" constant="40" id="RoY-Gk-daj"/>
                             <constraint firstItem="GIU-YO-dvi" firstAttribute="trailing" secondItem="I3H-1Z-5fb" secondAttribute="trailing" constant="16" id="VKg-94-1vd"/>
                             <constraint firstItem="Dhe-0S-4p4" firstAttribute="centerX" secondItem="lEp-VY-1YF" secondAttribute="centerX" id="ddr-f1-ydl"/>
                             <constraint firstItem="I3H-1Z-5fb" firstAttribute="top" secondItem="GIU-YO-dvi" secondAttribute="top" constant="16" id="nQh-Oi-CbU"/>
                             <constraint firstItem="qzd-MO-yKa" firstAttribute="centerX" secondItem="lEp-VY-1YF" secondAttribute="centerX" id="p1x-gY-h8E"/>
+                            <constraint firstItem="nMV-ZN-1Rh" firstAttribute="centerX" secondItem="lEp-VY-1YF" secondAttribute="centerX" id="rE1-ck-FZL"/>
                             <constraint firstItem="45i-6F-Ua8" firstAttribute="centerX" secondItem="lEp-VY-1YF" secondAttribute="centerX" id="rye-2D-1JY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GIU-YO-dvi"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="OCl-98-MEe" id="6r8-UJ-1PX"/>
+                        <outlet property="spinner" destination="nMV-ZN-1Rh" id="QKo-fX-zPR"/>
+                        <outlet property="usernameTxt" destination="W55-cx-cjE" id="65X-TG-pob"/>
                         <segue destination="RvJ-5q-KDh" kind="show" identifier="toCreateAccount" id="msw-E2-WJo"/>
                     </connections>
                 </viewController>

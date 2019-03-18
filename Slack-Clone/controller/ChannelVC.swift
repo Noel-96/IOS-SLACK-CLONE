@@ -21,6 +21,9 @@ class ChannelVC: UIViewController {
     }
     
 
+    override func viewDidAppear(_ animated: Bool) {
+        setupUserInfo()
+    }
 
     @IBAction func loginBtnPressed(_ sender: Any) {
         if AuthService.instance.isLoggedIn {
@@ -34,6 +37,12 @@ class ChannelVC: UIViewController {
     
     
     @objc func userDataDidChange(_ notif: Notification) {
+       setupUserInfo()
+    }
+    
+    @IBAction func unwindFromCreateAccountVc (unwindSegue : UIStoryboardSegue){}
+    
+    func setupUserInfo() {
         if AuthService.instance.isLoggedIn {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
@@ -44,9 +53,6 @@ class ChannelVC: UIViewController {
             userImg.backgroundColor = UIColor.clear
         }
     }
-    
-    @IBAction func unwindFromCreateAccountVc (unwindSegue : UIStoryboardSegue){}
-    
     
  }
     
