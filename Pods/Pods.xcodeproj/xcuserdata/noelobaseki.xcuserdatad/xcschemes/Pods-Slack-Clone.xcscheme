@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1CA08B8C1F46610C168F28E1D2EA2E43"
+               BlueprintIdentifier = "13D10CBAC72B74E2A81458A532685FD5"
                BuildableName = "Pods_Slack_Clone.framework"
                BlueprintName = "Pods-Slack-Clone"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1CA08B8C1F46610C168F28E1D2EA2E43"
+            BlueprintIdentifier = "13D10CBAC72B74E2A81458A532685FD5"
             BuildableName = "Pods_Slack_Clone.framework"
             BlueprintName = "Pods-Slack-Clone"
             ReferencedContainer = "container:Pods.xcodeproj">
